@@ -1,0 +1,21 @@
+GET localhost:8080/api/v1/products
+###
+GET localhost:8080/api/v1/products/1
+###
+POST localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "name" : "barang2",
+  "stock" : 2
+}
+###
+PUT localhost:8080/api/v1/products/1
+Content-Type: application/json
+
+{
+  "name" : "barang-update",
+  "stock" : 3
+}
+###
+DELETE localhost:8080/api/v1/products/1
